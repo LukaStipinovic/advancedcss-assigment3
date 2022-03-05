@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS - Assignment 3</title>
+
+    <style>
+        #flexbox {
+            max-width: 1410px;
+            display: flex;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0);
+            flex-flow: row wrap;
+            gap: 40px;
+        }
+
+        .placeholder {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+            flex-basis: 17.73%;
+        }
+
+        .background {
+            height: 200px;
+            background-image: url(placeholder-image.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: rgb(60, 144, 255);
+        }
+
+        .text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            padding: 2px;
+            background-color: azure;
+            text-align: center;
+        }
+
+        #header {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 42px;
+            flex-basis: 100%;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        #content {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            flex-basis: 100%;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+
+
+        @media screen and (max-width: 1427px) {
+            .placeholder {
+                flex-basis: 22.5%;
+            }
+        }
+
+        @media screen and (max-width: 1240px) {
+            .placeholder {
+                flex-basis: 30%;
+            }
+        }
+
+        @media screen and (max-width: 840px) {
+            .placeholder {
+                flex-basis: 45%;
+            }
+        }
+
+        @media screen and (max-width: 440px) {
+            .placeholder {
+                flex-basis: 100%;
+            }
+        } 
+
+    </style>
+</head>
+
+<body>
+    <div id="flexbox">
+        <div id="header">Gallery Heading</div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div class="placeholder">
+            <div class="background"></div>
+            <div class="text">Image Title</div>
+        </div>
+        <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto animi blanditiis
+            vel, corporis placeat beatae corrupti sint sed odit quidem veritatis deleniti laudantium perferendis, vero
+            assumenda recusandae provident quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            harum corporis nihil iusto quas nisi voluptate quidem placeat, ducimus illum magnam inventore consequuntur
+            itaque vero fugit facere quos alias. Sit!</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
